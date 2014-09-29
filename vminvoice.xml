@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension>
+<extension version="2.5" type="plugin" group="quickicon" method="upgrade">
+	<name>plg_quickicon_vminvoice</name>
+	<version>1.0.0</version>
+	<creationDate>2014-09-29</creationDate>
+	<author>Lorenzo Milesi</author>
+	<authorEmail>info@yetopen.it</authorEmail>
+	<authorUrl>http://www.yetopen.it</authorUrl>
+	<copyright>YetOpen S.r.l.</copyright>
+	<license>GNU/GPLv3 or later</license>
+	<description>PLG_QUICKICON_VMINVOICE_DESC</description>
+	<files>
+		<filename plugin="vminvoice">vminvoice.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="context"
+					   type="text"
+					   default="mod_quickicon"
+					   description="PLG_QUICKICON_VMINVOICE_GROUP_DESC"
+					   label="PLG_QUICKICON_VMINVOICE_GROUP_LABEL"
+						/>
+			</fieldset>
+		</fields>
+	</config></extension>
