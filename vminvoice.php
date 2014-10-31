@@ -38,14 +38,14 @@ class plgQuickiconVminvoice extends JPlugin {
                 'link' => JRoute::_("index.php?option=com_vminvoice&controller=invoices&task=addOrder"),
                 'image' => $useIcons ? "add" : "header/icon-48-article-add.png",
                 'text' => JText::_('COM_VMINVOICE_CREATE_NEW_ORDER'),
-                'access' => array('com_vminvoice'),
+                'access' => array('vminvoice.orders', 'com_vminvoice'),
                 'id' => 'com_vminvoice_neworder_icon' 
             ),
             array(
                 'link' => JRoute::_("index.php?option=com_vminvoice&controller=invoices"),
                 'image' => $useIcons ? "article" : "header/icon-48-article.png",
                 'text' => JText::_('COM_VMINVOICE_INVOICE_ORDER_MANAGEMENT'),
-                'access' => array('core.manage', 'com_vminvoice'),
+                'access' => array('vminvoice.orders', 'com_vminvoice'),
                 'id' => 'com_vminvoice_orderlist_icon' 
             ),
         );
